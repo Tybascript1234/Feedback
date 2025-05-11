@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link -->
+     <link rel="stylesheet" href="style.css">
+    <!-- script -->
+     <script src="script.js"></script>
+</head>
+<body>
+    <div class="feedback01" id="popupDiv0023">
+        <div class="feedback02 flex00">
+            <div class="feedback03 flex00">
+                <icon id="feedback_id01" style="background-image: url(icon/feedback.svg);"></icon>
+                <span></span>
+            </div>
+            <div class="feedback-close"><button class="wave-button"><icon style="background-image: url(icon/close.svg);"></icon></button></div>
+        </div>
+        <div class="feedback04">
+            <div class="feedggo">👋 Welcome, I am happy to answer any questions you have or any problems you face.</div>
+            <div class="feeddiv">
+                <input type="text" placeholder="Enter name" readonly>
+                <input type="text" placeholder="Enter email">
+                <textarea name="" id="" placeholder="Enter message"></textarea>
+                <input type="file" id="checkout" style="display: none;">
+                <label for="checkout" class="flex00 wave-button">Upload image</label>
+            </div>
+        </div>
+        <hr>
+        <div class="feedback04 flex00">
+            <a class="rr0012 wave-button">Privacy policy</a>
+            <button class="rr0012 wave-button">Language</button>
+        </div>    
+    </div>
+    <button class="feedback_button wave-button flex00" id="showDivBtn0023"><icon style="background-image: url(icon/feedback.svg);"></icon></button>
+      <div id="overlay0023"></div>
+
+    <script>
+    const showBtn0023 = document.getElementById("showDivBtn0023");
+    const popupDiv0023 = document.getElementById("popupDiv0023");
+    const overlay0023 = document.getElementById("overlay0023");
+
+    showBtn0023.addEventListener("click", () => {
+      popupDiv0023.style.display = "block";
+      overlay0023.style.display = "block";
+    });
+
+    overlay0023.addEventListener("click", () => {
+      popupDiv0023.style.display = "none";
+      overlay0023.style.display = "none";
+    });
+  </script>
+</body>
+</html>
